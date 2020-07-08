@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Alvin Lew">
+        <meta name="keywords" content="Personal Website, HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>Alvin Lew</title>
+    </head>
+    <body>
+        <header>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </header>
+        <section class="intro" data-aos="fade-top"> 
+            <img src="./images/aboutbg.jpg" alt="Background with keyboard">
+            <section class="text">
+                <h1>My name is Alvin Lew</h1>
+                <hr>
+                <p>Personal/Resume Website</p>
+            </section>
+        </section>
+        <main class="container">
+            <section class="card about" id="about" data-aos="fade-left">
+                <img src="./images/pic.jpeg" alt="Picture of computer">
+                <div class="info">
+                    <h1>About Me</h1>
+                    <hr>
+                    <ul>
+                        <li>a second-year computer science major</li>
+                        <li>living in Los Angeles, California</li>
+                        <li>who enjoys learning about code and applying it</li>
+                        <li>and loves food, traveling, and photography</li>
+                    </ul>
+                    <p><i>Picture taken in Malibu, California</i></p>
+                </div>
+            </section>
+            <section class="card single experience" id="experience" data-aos="fade-right">
+                <div class="info">
+                    <h1>Experience</h1>
+                    <hr>
+                    <h2>Programming Languages:</h2>
+                    <ul>
+                        <li>SQL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★★★☆</li>
+                        <li>Javscript&nbsp;&nbsp;&nbsp;&nbsp;★★★☆☆</li>
+                        <li>HTML&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★☆☆☆</li>
+                        <li>CSS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★☆☆☆</li>
+                        <li>Python&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★☆☆☆</li>
+                        <li>Java&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★☆☆☆</li>
+                        <li>C++&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;★★☆☆☆</li>
+                    </ul>
+
+                    <h2>Other Experience:</h2>
+                    <ul>
+                        <li>Git/Github</li>
+                        <li>Discord.js</li>
+                        <li>Node.js</li>
+                        <li>Arduino C++</li>
+                        <li>Competitive Programming</li>
+                        <li>Touch Typing: 135 WPM Average</li>
+                    </ul>
+
+                    <h2>Actual Languages:</h2>
+                    <ul>
+                        <li>English (primary language)</li>
+                        <li>Cantonese</li>
+                        <li>Mandarin</li>
+                        <li>Spanish</li>
+                        <li>Japanese</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card projects" id="projects" data-aos="fade-left">
+                <img src="./images/noodle.png" alt="Picture of Discord Bot">
+                <div class="info">
+                    <h1>Projects</h1>
+                    <hr>
+                    <h2>Discord Chatbot, featuring:</h2>
+                    <ul>
+                        <li>MySQL integration for storing data</li>
+                        <li>Currency and Experience System</li>
+                        <li>Various APIs, including COVID-19 tracking and Reddit posts</li>
+                        <li>Custom text responses</li>
+                        <li>Easy to use with dynamic help command</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card single extra" id="extra" data-aos="fade-right">
+                <div class="info">
+                    <h2>Like this website? Check out the code on Github!</h2>
+                    <a href="https://github.com/AlvGreat/Alvin-Lew-Personal-Web" target="_blank"><button>Github Repository</button></a>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <hr>
+            <div class="middle" id="contact">
+                <a class="btn" target="_blank" href="https://github.com/AlvGreat">
+                    <i class="btncntr fab fa-github"></i>
+                </a>
+                <a class="btn" target="_blank" href="mailto:alvinlew5@gmail.com">
+                    <i class="fas fa-mail-bulk"></i>
+                </a>
+                <a class="btn" target="_blank" href="https://www.youtube.com/channel/UCnpR1_RyGXg_a3_u5yu5HvQ?view_as=subscriber">
+                    <i class="btncntr fab fa-youtube"></i>
+                </a>
+                
+                <p>Email me: alvinlew5@gmail.com</p>
+                <p>Discord: alv#3519</p>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+              offset: 200,
+              //duration for animation in ms
+              duration: 800,
+          });
+        </script>
+    </body>
+</html>
