@@ -115,13 +115,28 @@ body {
   background: #c4d9f8;
 }
 
-#progLanguages {
+.starCols {
   display: flex;
 }
 
-.right li{ 
+.doubleCols {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+
+.doubleCols .starCols .right li { 
   list-style-type: none;
   font-size: 15px;
+}
+
+.doubleCols .left li {
+  grid-column: 1 / span 1;
+  list-style-type: disc;
+}
+
+.doubleCols .right li {
+  grid-column: 2 / span 2;
+  list-style-type: disc;
 }
 
 .info h1 {
@@ -197,6 +212,78 @@ img {
 /* alternate between image being on left/right */
 .card:nth-child(even) img {
   order: 2
+}
+
+/* project hover effects */
+.projects {
+  justify-content: center;
+  text-align: center;
+}
+
+.projects .info h3 {
+  text-align: left;
+  padding: 5px;
+  padding-top: 8px;
+  font-size: 18px;
+}
+
+.box-container {
+  width: 640px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box-container .box {
+  position: relative; 
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+}
+
+.box-container .box .imgBox {
+  position: relative; 
+  overflow: hidden;
+}
+
+.box-container .box .imgBox img {
+  object-fit: cover; 
+  width: 300px; 
+  height: 300px;
+  transition: transform 1.5s;
+}
+
+.box-container .box:hover .imgBox img {
+  transform: scale(1.15);
+}
+
+.box-container .box .details {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  bottom: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.7);
+  transform: scaleY(0);
+  transition: transform 0.6s;
+}
+
+.box-container .box:hover .details {
+  transform: scaleY(1);
+}
+
+.box-container .box .details .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+
+.box-container .box .details .content h2 {
+  text-align: center;
 }
 
 /* Footer CSS */
@@ -288,13 +375,23 @@ hr {
     /* background: linear-gradient(#91ebb9ea, #5fe286ea); */
   }
 
+  .box-container {
+    width: 320px;
+    margin: 20px auto 0;
+  }
+
+  .box-container .box .details {
+    background: rgba(0, 0, 0, 0.6);
+    transform: scaleY(1);
+  }
+
   header li { 
     float: left;
     list-style-type: none;
   }
 
   header li a {
-    font-size: 13px;
+    font-size: 14px;
     opacity: 90%;
     display: block;
     color: rgb(255, 255, 255);
@@ -305,13 +402,13 @@ hr {
 
   .intro .text {
     text-align: center;
-    font-size: 25px;
+    font-size: 30px;
   }
   .intro .text p {
-    font-size: 16px;
+    font-size: 18px;
   }
   .intro .text h1 {
-    font-size: 20px; 
+    font-size: 24px; 
   }
 
   .card {
@@ -330,20 +427,20 @@ hr {
   }
 
   .info h1 {
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
     padding-bottom: 10px;
   }
 
   .info h2 {
-    font-size: 15px;
+    font-size: 17px;
     text-align: left;
     padding: 10px;
   }
 
   .info ul {
     padding-left: 20px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 25px;
   }
 
@@ -354,7 +451,7 @@ hr {
   .middle p {
     font-family: "Roboto";
     line-height: 22px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .extra button{
